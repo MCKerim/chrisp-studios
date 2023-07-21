@@ -1,11 +1,30 @@
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <>
       
-
-
-    
-    </main>
-  )
+      <div
+        className="hero min-h-screen"
+        style={{
+          backgroundImage:
+            "url(/colorBg.jpg)",
+        }}
+      >
+        
+        <div className="hero-overlay bg-opacity-60"><Header /></div>
+        <div className="hero-content text-center text-neutral-content">
+          <div className="max-w-md">
+            <h1 className="mb-5 text-5xl font-bold">ChrisP Studios</h1>
+            <p className="mb-5">
+              Small indie gamedev studio located in germany
+            </p>
+            <button className="btn">Play Games</button>
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </>
+  );
 }
