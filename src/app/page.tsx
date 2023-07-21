@@ -1,19 +1,15 @@
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Card from "./components/Card";
 
 export default function Home() {
   return (
     <>
-      
       <div
         className="hero min-h-screen"
         style={{
-          backgroundImage:
-            "url(/colorBg.jpg)",
+          backgroundImage: "url(/colorBg.jpg)",
         }}
       >
-        
-        <div className="hero-overlay bg-opacity-60"><Header /></div>
+        <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md">
             <h1 className="mb-5 text-5xl font-bold">ChrisP Studios</h1>
@@ -24,7 +20,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }
