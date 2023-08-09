@@ -1,29 +1,23 @@
 import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <>
       <div
+        id="section-home"
         className="hero h-screen"
         style={{
-          backgroundImage: "url(/colorBg.jpg)",
+          backgroundImage: "url(/black-golden-colored-wallpaper.jpg)",
         }}
       >
-        <div className="hero-overlay bg-opacity-60"></div>
+        <div className="hero-overlay bg-opacity-40"></div>
         <div className="hero-content text-center text-neutral-content">
-          <div className="max-w-md">
-            <h1 className="mb-5 text-5xl font-bold text-white">
-              ChrisP Studios
-            </h1>
-            <p className="mb-5 text-white">
-              Small indie gamedev studio located in germany
-            </p>
-            <button className="btn">Play Games</button>
-          </div>
+          <Image src="/Logo.png" width={800} height={800} alt="Logo" />
         </div>
       </div>
-      
+
       <AboutSection />
 
       <div className="divider"></div>
@@ -32,3 +26,4 @@ export default function Home() {
     </>
   );
 }
+

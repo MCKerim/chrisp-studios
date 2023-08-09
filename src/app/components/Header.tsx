@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Header() {
   return (
     <div className="navbar bg-base-100 sticky top-0 z-40">
@@ -24,13 +26,13 @@ export default function Header() {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a>Homepage</a>
+              <Link href="#section-home">Home</Link>
             </li>
             <li>
-              <a>Games</a>
+              <Link href="#section-about">About</Link>
             </li>
             <li>
-              <a>Contact</a>
+              <Link href="#section-projects">Projects</Link>
             </li>
           </ul>
         </div>

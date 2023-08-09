@@ -1,11 +1,23 @@
+import ProjectCard from "./ProjectCard"
+
 export default function ProjectsSection() {
   return (
-    <div className="container my-24 mx-auto md:px-6">
+    <div className="container my-24 mx-auto md:px-6" id="section-projects">
       <section className="mb-32 text-center lg:text-left">
         <h2 className="mb-12 text-center text-4xl font-bold">Our Projects</h2>
+        <div className="grid gap-x-6 gap-y-12 lg:grid-cols-3 lg:gap-x-12">
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+        </div>
+      </section>
+    </div>
+  );
+}
 
-        <div className="grid gap-x-6 lg:grid-cols-3 lg:gap-x-12">
-          <div
+/**
+ * <div
             className="mb-6 block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 lg:mb-0"
             data-te-ripple-init
             data-te-ripple-color="light"
@@ -19,7 +31,7 @@ export default function ProjectsSection() {
                 <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,98.4%,0.2)]"></div>
               </a>
               <svg
-                className="absolute left-0 bottom-0 text-white dark:text-neutral-700"
+                className="absolute left-0 bottom-0"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 1440 320"
               >
@@ -130,8 +142,4 @@ export default function ProjectsSection() {
               </a>
             </div>
           </div>
-        </div>
-      </section>
-    </div>
-  );
-}
+ */

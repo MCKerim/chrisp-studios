@@ -1,0 +1,35 @@
+.main_div {
+  background-image: url(/unnamed.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 80vw;
+  max-height: 80vh;
+  max-width: 400px;
+  height: 600px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: auto;
+  transition: all 0.5s ease-in-out;
+}
+
+.main_div .overlay_div {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+
+.main_div:hover .overlay_div {
+  visibility: visible;
+  opacity: 1;
+}
+
+.main_div:hover {
+  transform: translateY(-10px);
+}
