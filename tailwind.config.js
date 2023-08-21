@@ -12,8 +12,8 @@ module.exports = {
     themes: [
       {
         'darkBeauty': {                          /* your theme name */
-           'primary' : '#eeea42',           /* Primary color */
-           'primary-focus' : '#eeea42',     /* Primary color - focused */
+           'primary' : '#fcd4a2',           /* Primary color */
+           'primary-focus' : '#fcd4a2',     /* Primary color - focused */
            'primary-content' : '#000000',   /* Foreground content color to use on primary color */
 
            'secondary' : '#101b1e',         /* Secondary color */
