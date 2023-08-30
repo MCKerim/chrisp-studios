@@ -1,5 +1,5 @@
-import AboutSection from "./components/AboutSection";
-import ProjectsSection from "./components/ProjectsSection";
+import AboutSection from "./components/Sections/AboutSection/AboutSection";
+import ProjectsSection from "./components/Sections/ProjectsSection/ProjectsSection";
 import Image from "next/image";
 
 export default function Home() {
