@@ -29,6 +29,13 @@ export default function ProjectCard({ title, image, link }: ProjectCardProps) {
           >
             {title}
           </p>
+          <div style={{
+            borderBottom: "1px",
+            borderColor: "white",
+            borderStyle: "solid",
+            witdh: "10px",
+          }} 
+          />
           <div
             style={{
               marginTop: "10px",
