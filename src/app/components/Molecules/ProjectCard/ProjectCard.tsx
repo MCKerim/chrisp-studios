@@ -33,7 +33,6 @@ export default function ProjectCard({ title, image, link }: ProjectCardProps) {
             borderBottom: "1px",
             borderColor: "white",
             borderStyle: "solid",
-            witdh: "10px",
           }} 
           />
           <div
