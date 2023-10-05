@@ -34,6 +34,9 @@ export default function Header() {
             <li>
               <Link href="#section-projects">Projects</Link>
             </li>
+            <li>
+              <Link href="#section-socialMedia">Social Media</Link>
+            </li>
           </ul>
         </div>
       </div>

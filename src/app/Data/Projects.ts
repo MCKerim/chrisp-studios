@@ -16,9 +16,4 @@ export const projects: IProject[] = [
     image: "/ProjectTestImage.jpg",
     link: "https://play.google.com/store/apps/details?id=com.MCKerim.ThinkBright",
   },
-  {
-    title: "Project 4",
-    image: "/ProjectTestImage.jpg",
-    link: "https://play.google.com/store/apps/details?id=com.MCKerim.ThinkBright",
-  },
 ];
