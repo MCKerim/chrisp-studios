@@ -5,7 +5,7 @@ export default function AboutSection() {
   return (
     <div className="hero my-20">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <img src="/Spiderman.jpg" className="max-w-sm rounded-lg shadow-2xl" />
+        <img alt="Profile Picture" src="/ProfilePicture.jpg" className="max-w-sm rounded-lg shadow-2xl" />
         <div>
           <h1 className="text-5xl font-bold">About Us</h1>
           <p className="py-6">

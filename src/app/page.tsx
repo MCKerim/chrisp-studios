@@ -10,7 +10,7 @@ export default function Home() {
         id="section-home"
         className="hero h-screen"
         style={{
-          backgroundImage: "url(/black-golden-colored-wallpaper.jpg)",
+          backgroundImage: "url(/Background.jpg)",
         }}
       >
         <div className="hero-overlay bg-opacity-40"></div>
