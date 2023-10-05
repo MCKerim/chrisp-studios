@@ -1,14 +1,13 @@
 .main_div {
   background-repeat: no-repeat;
   background-size: cover;
-  width: 80vw;
-  max-height: 80vh;
-  max-width: 400px;
-  height: 600px;
   border-radius: 10px;
   overflow: hidden;
   margin: auto;
   transition: all 0.5s ease-in-out;
+  width: 80vw;
+  max-width: 400px;
+  
 }
 
 .main_div .overlay_div {

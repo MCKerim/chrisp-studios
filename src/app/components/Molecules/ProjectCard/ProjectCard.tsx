@@ -11,6 +11,7 @@ export default function ProjectCard({ title, image, link }: ProjectCardProps) {
   return (
     <div className={hover.main_div} style={{
       backgroundImage: `url(${image})`,
+      aspectRatio: "9/16",
     }}>
       <div className={hover.overlay_div}>
         <div
