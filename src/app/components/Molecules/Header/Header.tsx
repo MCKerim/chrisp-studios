@@ -1,6 +1,47 @@
 import Link from "next/link";
 
 export default function Header() {
+  function renderHeaderLink(label: string, link: string) {
+    return (
+      <Link href={link} className="group">
+        <div>
+          <p
+            className="text-lg text-center"
+            style={{
+              color: "#fcd4a2",
+            }}
+          >
+            {label}
+          </p>
+          <img
+            className="opacity-0 group-hover:opacity-100 transition-opacity ease-in-out"
+            style={{
+              width: "100px",
+              height: "25px",
+            }}
+            src="/Logo.png"
+            alt=""
+          />
+        </div>
+      </Link>
+    );
+  }
+
+  return (
+    <div className="navbar sticky top-0 z-40 justify-around">
+      {renderHeaderLink("HOME", "#section-home")}
+      {renderHeaderLink("ABOUT", "#section-about")}
+      <img
+        style={{
+          height: "50px",
+        }}
+        src="/Logo.png"
+        alt=""
+      />
+      {renderHeaderLink("PROJECTS", "#section-projects")}
+      {renderHeaderLink("CONTACT", "#section-socialMedia")}
+    </div>
+  );
   return (
     <div className="navbar bg-base-100 sticky top-0 z-40">
       <div className="navbar-start">
