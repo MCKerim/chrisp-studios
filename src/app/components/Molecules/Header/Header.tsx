@@ -54,7 +54,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="hidden md:block fixed top-0 z-40 w-full bg-black bg-opacity-50 h-16">
+      <div className="hidden md:block fixed top-0 z-40 w-full bg-black bg-opacity-75 h-16">
         <div className="navbar justify-around p-0">
           {sections.map((section, index) => (
             <>
