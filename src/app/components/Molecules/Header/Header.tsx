@@ -86,7 +86,7 @@ export default function Header() {
                   className="h-5 w-5"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  stroke="#fcd4a2"
                 >
                   <path
                     strokeLinecap="round"
@@ -102,14 +102,23 @@ export default function Header() {
               >
                 {sections.map((section) => (
                   <li key={section.link}>
-                    <Link href={section.link}>{section.lable}</Link>
+                    <Link href={section.link} style={{ color: "#fcd4a2" }}>
+                      {section.lable}
+                    </Link>
                   </li>
                 ))}
               </ul>
             </div>
           </div>
           <div className="navbar-center">
-            <a className="btn btn-ghost normal-case text-xl">ChrisP Studios</a>
+            <img
+              className="mx-3"
+              style={{
+                width: "50px",
+              }}
+              src="/NavbarLogo.png"
+              alt=""
+            />
           </div>
           <div className="navbar-end"></div>
         </div>
