@@ -30,7 +30,7 @@ export default function Header() {
       <Link href={link} className="group">
         <div>
           <p
-            className="text-lg text-center"
+            className="text-lg text-center mx-3"
             style={{
               color: "#fcd4a2",
             }}
@@ -38,12 +38,13 @@ export default function Header() {
             {label}
           </p>
           <img
-            className="opacity-0 group-hover:opacity-100 transition-opacity ease-in-out"
+            className="opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100 transition-all ease-in-out duration-300 relative"
             style={{
-              width: "100px",
+              width: "100%",
               height: "25px",
+              top: "-14px",
             }}
-            src="/NavbarLogo.png"
+            src="/MenupunktLine.png"
             alt=""
           />
         </div>
@@ -60,6 +61,7 @@ export default function Header() {
               {renderHeaderLink(section.lable, section.link)}
               {index === 1 ? (
                 <img
+                  className="mx-3"
                   style={{
                     width: "80px",
                   }}
