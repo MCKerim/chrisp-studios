@@ -43,7 +43,7 @@ export default function Header() {
               width: "100px",
               height: "25px",
             }}
-            src="/Logo.png"
+            src="/NavbarLogo.png"
             alt=""
           />
         </div>
@@ -53,17 +53,17 @@ export default function Header() {
 
   return (
     <>
-      <div className="hidden md:block sticky top-0 z-40">
-        <div className="navbar justify-around">
+      <div className="hidden md:block fixed top-0 z-40 w-full">
+        <div className="navbar justify-around p-0">
           {sections.map((section, index) => (
             <>
               {renderHeaderLink(section.lable, section.link)}
               {index === 1 ? (
                 <img
                   style={{
-                    height: "50px",
+                    width: "80px",
                   }}
-                  src="/Logo.png"
+                  src="/NavbarLogo.png"
                   alt=""
                 />
               ) : (
@@ -74,7 +74,7 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="md:hidden sticky top-0 z-40">
+      <div className="md:hidden fixed top-0 z-40 w-full">
         <div className="navbar bg-base-100">
           <div className="navbar-start">
             <div className="dropdown">
